@@ -1,0 +1,37 @@
+/* 
+
+font-family: 'DM Sans', sans-serif;
+
+    important that s padding and margin
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+
+*/
+
+/*************************
+********* FIRST CLASS ****
+**************************/
+
+.one__div {
+  width: 40rem;
+  height: 10rem;
+  background-color: hsl(10, 79%, 65%);
+}
+
+.my__balance {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  padding-left: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.money {
+  padding-left: 1.6rem;
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+}
