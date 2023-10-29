@@ -6,8 +6,10 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
+
+/* Body need a witdh */
 
 body {
   display: flex;
@@ -16,15 +18,12 @@ body {
   align-items: center;
   padding: 30px;
   min-height: 100vh;
-}
-.grid {
-  display: grid;
+  font-family: "DM Sans", sans-serif;
+  background-color: hsl(27, 66%, 92%);
 }
 
-.one__div {
-  align-items: center;
-  border-radius: 10px;
-  gap: 20rem;
+.grid {
+  display: grid;
 }
 
 .grid--2-cols {
@@ -35,7 +34,456 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.flex {
+.grid--7-cols {
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: 1.4rem;
+}
+
+/* STYLE */
+
+.page__one {
+  gap: 10rem;
+  background-color: hsl(10, 79%, 65%);
+  width: 40rem;
+  height: 10rem;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.account__info {
+  margin-left: 2rem;
   display: flex;
   flex-direction: column;
+  gap: 1.4rem;
+}
+
+.account__info h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.account__info h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.logo__img {
+  margin-left: 6rem;
+}
+
+.page__two {
+  margin-top: 2rem;
+  background-color: #fff;
+  height: 40rem;
+  border-radius: 10px;
+}
+
+.day__info {
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  margin-bottom: 4.4rem;
+}
+
+.days__ {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.paragraph__mon {
+  margin-bottom: 2rem;
+  margin-top: 0.4rem;
+  color: hsl(28, 10%, 53%);
+}
+
+/****************
+*** MONDAY *****
+***************/
+
+.mon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.plaza__mon {
+  height: 4rem;
+  border-radius: 4px;
+}
+
+.monday__link:link,
+.monday__link:visited {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: hsl(10, 79%, 65%);
+  transition: all 0.3s;
+}
+
+.monday__link:hover,
+.monday__link:active {
+  background-color: hsl(10, 100%, 81%);
+}
+
+/****************
+*** TUESDAY *****
+***************/
+
+.tue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.9rem;
+}
+
+.tuesday__link:link,
+.tuesday__link:visited {
+  display: inline-block;
+  height: 8rem;
+  width: 4rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: hsl(10, 79%, 65%);
+  transition: all 0.3s;
+}
+
+.tuesday__link:hover,
+.tuesday__link:active {
+  background-color: hsl(10, 100%, 81%);
+}
+
+.paragraph__tue {
+  margin-bottom: 2rem;
+  margin-top: 0.1rem;
+  color: hsl(28, 10%, 53%);
+}
+
+/****************
+*** WEDNESDAY *****
+***************/
+
+.wed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12rem;
+}
+
+.wed__link:link,
+.wed__link:visited {
+  display: inline-block;
+  height: 14rem;
+  width: 4rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: hsl(10, 79%, 65%);
+  transition: all 0.3s;
+}
+
+.wed__link:hover,
+.wed__link:active {
+  background-color: hsl(10, 100%, 81%);
+}
+
+.paragraph__wed {
+  margin-top: 0.1rem;
+  color: hsl(28, 10%, 53%);
+}
+
+/****************
+*** THUSDAY *****
+***************/
+
+.thu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+.thu__link:link,
+.thu__link:visited {
+  display: inline-block;
+  height: 7rem;
+  width: 4rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: hsl(10, 79%, 65%);
+  transition: all 0.3s;
+}
+
+.thu__link:hover,
+.thu__link:active {
+  background-color: hsl(10, 100%, 81%);
+}
+
+.paragraph__thu {
+  margin-top: -4.2rem;
+  color: hsl(28, 10%, 53%);
+}
+
+/****************
+*** FRIDAY *****
+***************/
+
+.fri {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.6rem;
+}
+
+.fri__link:link,
+.fri__link:visited {
+  display: inline-block;
+  height: 5rem;
+  width: 4rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: hsl(10, 79%, 65%);
+  transition: all 0.3s;
+}
+
+.fri__link:hover,
+.fri__link:active {
+  background-color: hsl(10, 100%, 81%);
+}
+
+.paragraph__fri {
+  margin-top: -2rem;
+  color: hsl(28, 10%, 53%);
+}
+
+/****************
+*** SATURDAY *****
+***************/
+
+.sat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7.7rem;
+}
+
+.sat__link:link,
+.sat__link:visited {
+  display: inline-block;
+  height: 10rem;
+  width: 4rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: hsl(10, 79%, 65%);
+  transition: all 0.3s;
+}
+
+.sat__link:hover,
+.sat__link:active {
+  background-color: hsl(10, 100%, 81%);
+}
+
+.paragraph__sat {
+  margin-top: -7rem;
+  color: hsl(28, 10%, 53%);
+}
+
+/****************
+*** SUNDAY *****
+***************/
+
+.sun {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3.6rem;
+}
+
+.sun__link:link,
+.sun__link:visited {
+  display: inline-block;
+  height: 6rem;
+  width: 4rem;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: hsl(186, 34%, 60%);
+  transition: all 0.3s;
+}
+
+.sun__link:hover,
+.sun__link:active {
+  background-color: hsl(186, 45%, 71%);
+}
+
+.paragraph__sun {
+  margin-top: -3rem;
+  color: hsl(28, 10%, 53%);
+}
+
+/*********************
+*** INFO PAGE ******
+********************/
+
+.info_page {
+  margin-top: -10rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  border-top: 0.4px solid hsl(27, 66%, 92%);
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  gap: 2rem;
+}
+
+.left__info {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.total__this__month h3 {
+  color: hsl(28, 10%, 53%);
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.total__price h1 {
+  font-size: 3.2rem;
+  font-family: "DM Sans", sans-serif;
+}
+
+.right__info {
+  margin-left: 6rem;
+}
+
+.total__interest h6 {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.total__info h4 {
+  color: hsl(28, 10%, 53%);
+  font-weight: 400;
+}
+
+.attribution {
+  margin-top: 4rem;
+}
+
+.attribution span {
+  font-size: 2rem;
+}
+
+/*******************
+**** HIDDEN PRICE **
+*********MONDAY ***
+*******************/
+
+.mon__price {
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  bottom: 49%;
+}
+
+/*******************
+**** HIDDEN PRICE **
+*********TUESDAY ***
+*******************/
+
+.tue__price {
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  bottom: 54.4%;
+}
+
+/*******************
+**** HIDDEN PRICE **
+*********WEDNESDAY ***
+*******************/
+
+.wed__price {
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  bottom: 62.9%;
+}
+
+/*******************
+**** HIDDEN PRICE **
+*********THUSDAY ***
+*******************/
+
+.thu__price {
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  bottom: 53%;
+}
+
+/*******************
+**** HIDDEN PRICE **
+*********FRIDAY ***
+*******************/
+
+.fri__price {
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  bottom: 50%;
+}
+
+/*******************
+**** HIDDEN PRICE **
+********* SATURDAY ***
+*******************/
+
+.sat__price {
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  bottom: 57%;
+}
+
+/*******************
+**** HIDDEN PRICE **
+********* SUNDAY ***
+*******************/
+
+.sun__price {
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  bottom: 51.4%;
+}
+
+.hidden {
+  display: none;
 }
